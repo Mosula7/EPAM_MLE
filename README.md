@@ -1,1 +1,1 @@
-# EPAM_MLE
+repository for EPAM MLE course
