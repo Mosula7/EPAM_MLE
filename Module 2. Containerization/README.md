@@ -1,5 +1,7 @@
 # Homework 2
 
+the model is built on the heart disease dataset. 
+
 to build and run the docker image you need to specify USER_ID and GROUP_ID, for example while in the directory run 
 ```
 docker-compose build --build-arg USER_ID=1000 --build-arg GROUP_ID=1001 
