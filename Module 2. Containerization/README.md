@@ -24,4 +24,8 @@ python train.py heart.csv # or another dataset. the dataset must be a csv file a
 * predict.py - script to make predictions. the dataset must not have a target, it should be just Xs. it saves the predictions in the data folder as pred_{current time}.csv. you need to pass the model txt file and the dataset and the model file
 ```
 python predict.py model.txt predict.csv # or any other model or data. the model must be in the models folder and the data - data folder
-  
+```
+
+there is also a testing.ipynb file - just a jupyter notebook where I tested if the model actually worked
+
+PS I changed the model from the pretrained CV model to the one I'm training myself on a small dataset, because installing torch and other libraries on the image took over 30 minutes each time, so It was very inconvinient for testing. Also images took up a lot of space
