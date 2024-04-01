@@ -1,0 +1,25 @@
+# Use a slim Debian image for a smaller footprint
+FROM python:3.12.2
+
+ARG USER_ID
+ARG GROUP_ID
+
+RUN \
+  groupadd -r --gid ${GROUP_ID} data_user_group && \
+  useradd -r --uid ${USER_ID} -g data_user_group data_user
+
+WORKDIR /app
+COPY data /app/data
+RUN chown -R data_user:data_user_group /app/data
+
+# Copying
+COPY models /app/models
+
+COPY train.py /app/train.py
+COPY predict.py /app/predict.py
+
+# Install Python dependencies from requirements.txt (if present)
+COPY requirements.txt ./
+RUN pip install --no-cache-dir -r requirements.txt
+
+USER data_user

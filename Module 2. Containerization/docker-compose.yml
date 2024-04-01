@@ -1,0 +1,11 @@
+version: "3.8"  # U
+
+services:
+  lightgbm-app:
+    build: .  
+    volumes:
+      - ./data:/app/data  
+      - ./models:/app/models
+    tty: true
+    environment:
+      - USER_ID=${USER_ID}
