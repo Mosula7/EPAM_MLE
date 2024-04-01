@@ -8,7 +8,7 @@ docker-compose build --build-arg USER_ID=1000 --build-arg GROUP_ID=1001
 docker-compose up
 ```
 
-dockerfile - I'm using python 3.12.2 base just copying the folders and scripts and installing libraries from requriments.txt
+dockerfile - I'm using python 3.12.2 base just copying the folders and scripts and installing libraries from requriments.txt. Data permission configuration is also in the file.
 
 docer-compose - I'm using volumes for the data and models folders 
 
