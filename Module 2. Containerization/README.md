@@ -1,7 +1,8 @@
 # Homework 2
 
-to build and run the docker image, while in the directory run 
+to build and run the docker image you need to specify USER_ID and GROUP_ID, for example while in the directory run 
 ```
+docker-compose build --build-arg USER_ID=1000 --build-arg GROUP_ID=1001 
 docker-compose up
 ```
 
