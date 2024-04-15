@@ -11,7 +11,7 @@
     python optimize_model.py
   ```
 * model_deploymnet
-  * app.py - hosts a fast api server using uvicorn on port 8000 where you can make predictions using a model in the models directory. after going to local host 8000 add /docs at the end and you will see predict prost where you can pass model features and it will return a churn probability.
+  * app.py - hosts a fast api server using uvicorn on port 8000 where you can make predictions using a model in the models directory. after going to local host 8000 add /docs at the end and you will see predict post where you can pass model features and it will return a churn probability.
   * customer.py class for storing data required for the model
   * dockerfile - builds an image and locally hosts a fast api server.
   * models - directory to store models in.
