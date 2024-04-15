@@ -18,7 +18,7 @@
  
 * docker-compose.yml - builds model_deployment and model_optimization images. also makes volumes for data, models and mlflow.db in model_optimization and models in model_deployment. to build images and run containers while in the module3 directory run
 ```
-docker-compose uo
+docker-compose up
 ```
 
 
