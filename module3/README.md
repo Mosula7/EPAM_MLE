@@ -20,5 +20,6 @@
 ```
 docker-compose up
 ```
+* testing.ipynb - notebook used to test the process.
 
 
